@@ -1,21 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*Ejercicio 2
+Leer un numero e indicar si es positivo o negativo .
+El proceso se repetira hasta que se introduzca 0 */
 package ejercicio2;
-
-/**
- *
- * @author Isaac
- */
+import javax.swing.JOptionPane;
 public class Ejercicio2 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+       int numero ;
+        numero = Integer.parseInt(JOptionPane.showInputDialog("Digite un numero:"));
+        while(numero != 0){
+            if (numero >0){
+                System.out.println("El numero es positivo: " + numero);
+            }
+            else {
+                System.out.println("El numero es negativo: " + numero);
+            }
+            numero = Integer.parseInt(JOptionPane.showInputDialog("Digite otro numero:"));
+        }
     }
-    
 }
